@@ -28,7 +28,7 @@ hs_err_pid*
 local.properties
 
 # workspace settings
-# .vscode/
+.vscode/
 
 # OS files
 .DS_Store
