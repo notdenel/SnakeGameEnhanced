@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Snake Game",
+            "request": "launch",
+            "mainClass": "snakegame.App",
+            "projectName": "SnakeGameEnhanced",
+            "console": "externalTerminal",
+            "args": [],
+            "vmArgs": [],
+            "preLaunchTask": "Compile Java"
+        },
+        {
+            "type": "java",
+            "name": "Debug Snake Game",
+            "request": "launch",
+            "mainClass": "snakegame.App",
+            "projectName": "SnakeGameEnhanced",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "args": [],
+            "vmArgs": [],
+            "preLaunchTask": "Compile Java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "projectName": "SnakeGameEnhanced"
+        }
+    ]
+}

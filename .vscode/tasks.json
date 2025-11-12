@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile Java",
+            "command": "javac",
+            "args": [
+                "-d",
+                "bin",
+                "-cp",
+                "bin",
+                "src/snakegame/*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Run Snake Game",
+            "command": "java",
+            "args": [
+                "-cp",
+                "bin",
+                "snakegame.App"
+            ],
+            "group": "test",
+            "dependsOn": "Compile Java",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Clean Build",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Remove-Item -Path bin\\* -Recurse -Force -ErrorAction SilentlyContinue"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}

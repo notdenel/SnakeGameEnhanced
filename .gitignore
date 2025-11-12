@@ -1,0 +1,47 @@
+# class files
+*.class
+bin/
+
+# package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# vm crash logs
+hs_err_pid*
+
+# IDE specific files
+.metadata
+.recommenders
+.settings/
+.project
+.classpath
+.buildpath
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+
+# workspace settings
+# .vscode/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# java-specific
+dependency-reduced-pom.xml
+target/
+
+# misc
+*.pdf
